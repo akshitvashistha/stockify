@@ -1,0 +1,87 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 30px;
+    background-color: #fff;
+    width: 95%;
+    height: 80px;
+    /* border-radius: 13px; */
+    z-index: 1;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h1{
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.logo{
+    height: 27px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.ham-menu{
+    z-index: 1;
+}
+
+.menu-icon{
+    height: 27px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.cross-icon{
+    height: 27px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.stock-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    backdrop-filter: blur(15px);
+    width: 500px;
+    height: 100vh;
+    position: absolute;
+    top: -20px;
+    right: -110%;
+    align-items: stretch;
+    padding: 25vh 0 30px 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.stock-menu.active{
+    right: 0%;
+}
+
+.stock-item{
+    color: #000;
+    list-style: none;
+    display: block;
+    widows: 100%;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+.stock-item:hover{
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px){
+    .stock-menu{
+        width: 100%;
+        height: 170vh;
+    }
+}
